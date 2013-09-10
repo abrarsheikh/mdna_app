@@ -1,0 +1,348 @@
+2013/09/05 20:58:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('getPhotos')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/getPh...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/getPhotos/4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:00:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('getPhotos')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/getPh...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/getPhotos/4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:00:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getPhotos".' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('getPhotos')
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('getPhotos')
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/getPh...')
+#3 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/getPhotos/4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:00:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('getPhotos')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/getPh...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/getPhotos/4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:02:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('getPhotos')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/getPh...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/getPhotos/4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:02:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('getPhotos')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/getPh...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/getPhotos/4029
+---
+2013/09/05 21:04:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('getPhotos')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/getPh...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/getPhotos/4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:04:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('getPhotos')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/getPh...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/getPhotos/4029
+---
+2013/09/05 21:06:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('getPhotos')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/getPh...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/getPhotos/4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:08:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('get')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/get')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/get/4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:12:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/updat...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/update/$url
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:12:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/updat...')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/update/$url
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:14:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('get')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/get')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/get?id=4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:19:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('get')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/get')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/get?id=4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:21:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('get')
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/get')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/get
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
+2013/09/05 21:28:17 [error] [php] Undefined variable: modelId (C:\wamp\www\mdna\protected\controllers\MdnaChildController.php:252)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): MdnaChildController->runAction()
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): RightsFilter->filter()
+#3 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): MdnaChildController->filterRights()
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): MdnaChildController->runActionWithFilters()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): MdnaChildController->run()
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\mdna\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/mdna/index-test.php/mdnaChild/get/4029
+2013/09/05 21:28:51 [error] [php] Undefined variable: modelId (C:\wamp\www\mdna\protected\controllers\MdnaChildController.php:252)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): MdnaChildController->runAction()
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): RightsFilter->filter()
+#3 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): MdnaChildController->filterRights()
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): MdnaChildController->runActionWithFilters()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): MdnaChildController->run()
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\mdna\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/mdna/index-test.php/mdnaChild/get/4029
+2013/09/06 07:36:27 [error] [php] Undefined index: id (C:\wamp\www\mdna\protected\controllers\MdnaChildController.php:252)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): MdnaChildController->runAction()
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): RightsFilter->filter()
+#3 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): MdnaChildController->filterRights()
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): MdnaChildController->runActionWithFilters()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): MdnaChildController->run()
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\mdna\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/mdna/index-test.php/mdnaChild/get/
+2013/09/10 11:26:28 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (C:\wamp\www\yii-1.1.13.e9e4a0\framework\db\CDbConnection.php:423)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\db\CDbConnection.php(308): CDbConnection->setActive()
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\auth\CDbAuthManager.php(589): CWebApplication->getComponent()
+#4 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\auth\CDbAuthManager.php(59): RDbAuthManager->getDbConnection()
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CModule.php(387): RDbAuthManager->init()
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(185): CWebApplication->getComponent()
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\auth\CWebUser.php(806): CWebApplication->getAuthManager()
+#8 C:\wamp\www\mdna\protected\modules\rights\components\RWebUser.php(43): RWebUser->checkAccess()
+#9 C:\wamp\www\mdna\protected\modules\rights\components\RightsFilter.php(43): RWebUser->checkAccess()
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(38): RightsFilter->preFilter()
+#11 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): RightsFilter->filter()
+#12 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): SiteController->filterRights()
+#13 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\wamp\www\mdna\index.php(13): CWebApplication->run()
+REQUEST_URI=/mdna/
+in C:\wamp\www\mdna\protected\modules\rights\components\RWebUser.php (43)
+in C:\wamp\www\mdna\protected\modules\rights\components\RightsFilter.php (43)
+in C:\wamp\www\mdna\protected\modules\rights\components\RController.php (36)
+2013/09/10 15:11:32 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'Could not upload file' in C:\wamp\www\mdna\protected\controllers\MdnaChildController.php:396
+Stack trace:
+#0 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): MdnaChildController->actionUpload()
+#1 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\mdna\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#6 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('upload')
+#10 C:\wamp\www\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('mdnaChild/uploa...')
+#11 C:\wamp\www\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\wamp\www\mdna\index-test.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/mdna/index-test.php/mdnaChild/upload/4029
+HTTP_REFERER=http://localhost/mdna/index-test.php/mdnaChild/update/4029
+---
