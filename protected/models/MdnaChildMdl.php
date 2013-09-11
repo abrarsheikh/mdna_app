@@ -283,11 +283,11 @@ class MdnaChildMdl extends CActiveRecord {
         $criteria->compare('name', $this->name, true);
         $criteria->compare('phc_name', $this->phc_name, true);
 //        $criteria->compare('dob', $this->dob, true);
-        $criteria->compare('sex', $this->sex, true);
+        $criteria->compare('sex', $this->sex, false);
         $criteria->mergeWith($this->ageRangeSearchCriteria('dob', $this->fromBirthdate, $this->toBirthdate));
 //        $criteria->mergeWith($this->dateRangeSearchCriteria('dobs', $this->dob));  
 
-        $criteria->compare('caste', $this->caste, true);
+        $criteria->compare('caste', $this->caste, false);
         $criteria->compare('street', $this->street, true);
         $criteria->compare('landmark', $this->landmark, true);
         $criteria->compare('sam_no', $this->sam_no, true);
@@ -310,7 +310,7 @@ class MdnaChildMdl extends CActiveRecord {
         $criteria->compare('fi_no_sibling', $this->fi_no_sibling);
         $criteria->compare('fi_no_brother', $this->fi_no_brother);
         $criteria->compare('fi_no_sister', $this->fi_no_sister);
-        $criteria->compare('c_appetite', $this->c_appetite, true);
+        $criteria->compare('c_appetite', $this->c_appetite, false);
         $criteria->compare('c_dairrhoea', $this->c_dairrhoea, true);
         $criteria->compare('c_vomiting', $this->c_vomiting, true);
         $criteria->compare('c_urinary', $this->c_urinary, true);
@@ -354,7 +354,7 @@ class MdnaChildMdl extends CActiveRecord {
         $criteria->compare('gpe_pallor_some_sever', $this->gpe_pallor_some_sever, true);
         $criteria->compare('gpe_lymphadenopathy', $this->gpe_lymphadenopathy);
         $criteria->compare('gpe_desc_ymphadenopathy', $this->gpe_desc_ymphadenopathy, true);
-        $criteria->compare('gpe_if_diarrhoea', $this->gpe_if_diarrhoea, true);
+        $criteria->compare('gpe_if_diarrhoea', $this->gpe_if_diarrhoea, false);
         $criteria->compare('se_respitary', $this->se_respitary, true);
         $criteria->compare('se_cardio_vascular', $this->se_cardio_vascular, true);
         $criteria->compare('se_abdominal', $this->se_abdominal, true);
@@ -393,7 +393,7 @@ class MdnaChildMdl extends CActiveRecord {
         $criteria->compare('ep_others', $this->ep_others, true);
         $criteria->compare('dh_like', $this->dh_like, true);
         $criteria->compare('dh_dislike', $this->dh_dislike, true);
-        $criteria->compare('bf_put_to_breast', $this->bf_put_to_breast, true);
+        $criteria->compare('bf_put_to_breast', $this->bf_put_to_breast, false);
         $criteria->compare('bf_Breast_fed_up_to', $this->bf_Breast_fed_up_to, true);
         $criteria->compare('bf_introduction_of_food_at', $this->bf_introduction_of_food_at, true);
         $criteria->compare('mp_m_menu', $this->mp_m_menu, true);
