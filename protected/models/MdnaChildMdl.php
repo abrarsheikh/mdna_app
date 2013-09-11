@@ -189,7 +189,7 @@ class MdnaChildMdl extends CActiveRecord {
         // will receive user inputs.
         return array(
             array('taluk_code, name, phc_name, dob, sex', 'required'),
-            array('fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, gpe_lymphadenopathy', 'numerical', 'integerOnly' => true),
+            array('age, fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, gpe_lymphadenopathy', 'numerical', 'integerOnly' => true),
             array('taluk_code, sr_no_wnc, caste, district, talluka, ph_no, gpe_mouth_glossitis, gpe_pallor_some_sever, gpe_if_diarrhoea, se_respitary, se_cardio_vascular, se_abdominal, se_central_nervous, ir_Hb, ir_leukocyte_count, ir_blood_glucose, ir_blood_culture, ir_urine_routine, ir_urine_cs, ir_chest_xray, ir_monthoux_test, bf_Breast_fed_up_to, bf_introduction_of_food_at', 'length', 'max' => 20),
             array('name, phc_name, street, landmark, name_of_anganwadi, name_of_AWW, fi_m_name, fi_m_profession, fi_f_name, fi_f_profession, dh_other_milk, gpe_desc_hair_change, gpe_desc_skin_change, gpe_desc_vit_a_def, gpe_desc_ear_discharge, gpe_desc_ymphadenopathy, ci_malnutritionutrition, m_domiciliaty, m_medical, m_Nutritional, created_by, last_edited_by', 'length', 'max' => 50),
             array('sex, sam_no, dh_age_of_comp, dh_no_of_feeds, gpe_heart_rate, gpe_respiratory_rate, gpe_bl_grade, gpe_alert_Irritable_lethargic, ep_cereals, ep_pulses, ep_oilseeds, ep_milk_products, ep_fruits, ep_coloured_vegetable, ep_other_vegetables, ep_oils_fat, ep_egg, ep_fleshy_foods, ep_sugar, ep_others, mp_m_time, mp_bf_quantity, mp_bf_time, mp_l_quantity, mp_l_time, mp_s_quantity, mp_s_time, mp_d_quantity, mp_d_time, mp_o_quantity, mp_o_time, cre_biscuits, cre_khara_mixture, cre_bread, cre_chocolates, cre_chips, cre_soft_drinks, cre_other, sq_aitamin_a, sq_iron_n_folic_acid, sq_b_complex', 'length', 'max' => 10),
@@ -197,10 +197,10 @@ class MdnaChildMdl extends CActiveRecord {
             array('c_appetite, c_dairrhoea, c_vomiting, c_urinary, c_fever, c_cough, c_lethargy, c_swelling, ih_opv, ih_hepb, ih_bcg, ih_opv123, ih_dpt123, ih_hepb123, ih_mis_vita, ih_dpt_opv, ih_mis_bost, dh_breast_feeds, dh_other, dh_bottle_feeding, dh_comp_feeds, gpe_chest_indrawing, gpe_visible_severe_wasting, gpe_bl_pedal_edema, gpe_hair_changes, gpe_skin_changes, gpe_eye_signs_vit_a_def, gpe_ear_discharge, gpe_pallor', 'length', 'max' => 1),
             array('dh_like, dh_dislike', 'length', 'max' => 500),
             array('bf_put_to_breast', 'length', 'max' => 40),
-            array('dor, fi_m_dob, fi_f_dob, create_at, last_edited_at', 'safe'),
+            array('dor, fi_m_dob, fi_f_dob, age,      create_at, last_edited_at', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, taluk_code, sr_no_wnc, name, phc_name, dob, sex, caste, street, landmark, sam_no, district, talluka, name_of_anganwadi, name_of_AWW, ph_no, dor, fi_m_name, fi_m_dob, fi_m_education, fi_m_profession, fi_f_name, fi_f_dob, fi_f_education, fi_f_profession, fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, c_appetite, c_dairrhoea, c_vomiting, c_urinary, c_fever, c_cough, c_lethargy, c_swelling, ih_opv, ih_hepb, ih_bcg, ih_opv123, ih_dpt123, ih_hepb123, ih_mis_vita, ih_dpt_opv, ih_mis_bost, dh_breast_feeds, dh_other, dh_other_milk, dh_bottle_feeding, dh_comp_feeds, dh_age_of_comp, dh_no_of_feeds, gpe_heart_rate, gpe_respiratory_rate, gpe_chest_indrawing, gpe_visible_severe_wasting, gpe_bl_pedal_edema, gpe_bl_grade, gpe_alert_Irritable_lethargic, gpe_hair_changes, gpe_desc_hair_change, gpe_skin_changes, gpe_desc_skin_change, gpe_eye_signs_vit_a_def, gpe_desc_vit_a_def, gpe_ear_discharge, gpe_desc_ear_discharge, gpe_mouth_glossitis, gpe_pallor, gpe_pallor_some_sever, gpe_lymphadenopathy, gpe_desc_ymphadenopathy, gpe_if_diarrhoea, se_respitary, se_cardio_vascular, se_abdominal, se_central_nervous, ir_Hb, ir_leukocyte_count, ir_blood_glucose, ir_blood_culture, ir_urine_routine, ir_urine_cs, ir_chest_xray, ir_monthoux_test, ci_malnutritionutrition, ci_diagnosi, m_domiciliaty, m_medical, m_Nutritional, r_higher_facility, fuw1, fuw2, fuw3, fuw4, fum2, fum4, ep_cereals, ep_pulses, ep_oilseeds, ep_milk_products, ep_fruits, ep_coloured_vegetable, ep_other_vegetables, ep_oils_fat, ep_egg, ep_fleshy_foods, ep_sugar, ep_others, dh_like, dh_dislike, bf_put_to_breast, bf_Breast_fed_up_to, bf_introduction_of_food_at, mp_m_menu, mp_m_ingredients, mp_m_quantity, mp_m_time, mp_bf_menu, mp_bf_ingredients, mp_bf_quantity, mp_bf_time, mp_l_menu, mp_l_ingredients, mp_l_quantity, mp_l_time, mp_s_menu, mp_s_ingredients, mp_s_quantity, mp_s_time, mp_d_menu, mp_d_ingredients, mp_d_quantity, mp_d_time, mp_o_menu, mp_o_ingredients, mp_o_quantity, mp_o_time, cre_biscuits, cre_khara_mixture, cre_bread, cre_chocolates, cre_chips, cre_soft_drinks, cre_other, sq_aitamin_a, sq_iron_n_folic_acid, sq_b_complex, created_by, last_edited_by, create_at, last_edited_at', 'safe', 'on' => 'search'),
+            array('id, taluk_code, sr_no_wnc, name, phc_name, dob, age, sex, caste, street, landmark, sam_no, district, talluka, name_of_anganwadi, name_of_AWW, ph_no, dor, fi_m_name, fi_m_dob, fi_m_education, fi_m_profession, fi_f_name, fi_f_dob, fi_f_education, fi_f_profession, fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, c_appetite, c_dairrhoea, c_vomiting, c_urinary, c_fever, c_cough, c_lethargy, c_swelling, ih_opv, ih_hepb, ih_bcg, ih_opv123, ih_dpt123, ih_hepb123, ih_mis_vita, ih_dpt_opv, ih_mis_bost, dh_breast_feeds, dh_other, dh_other_milk, dh_bottle_feeding, dh_comp_feeds, dh_age_of_comp, dh_no_of_feeds, gpe_heart_rate, gpe_respiratory_rate, gpe_chest_indrawing, gpe_visible_severe_wasting, gpe_bl_pedal_edema, gpe_bl_grade, gpe_alert_Irritable_lethargic, gpe_hair_changes, gpe_desc_hair_change, gpe_skin_changes, gpe_desc_skin_change, gpe_eye_signs_vit_a_def, gpe_desc_vit_a_def, gpe_ear_discharge, gpe_desc_ear_discharge, gpe_mouth_glossitis, gpe_pallor, gpe_pallor_some_sever, gpe_lymphadenopathy, gpe_desc_ymphadenopathy, gpe_if_diarrhoea, se_respitary, se_cardio_vascular, se_abdominal, se_central_nervous, ir_Hb, ir_leukocyte_count, ir_blood_glucose, ir_blood_culture, ir_urine_routine, ir_urine_cs, ir_chest_xray, ir_monthoux_test, ci_malnutritionutrition, ci_diagnosi, m_domiciliaty, m_medical, m_Nutritional, r_higher_facility, fuw1, fuw2, fuw3, fuw4, fum2, fum4, ep_cereals, ep_pulses, ep_oilseeds, ep_milk_products, ep_fruits, ep_coloured_vegetable, ep_other_vegetables, ep_oils_fat, ep_egg, ep_fleshy_foods, ep_sugar, ep_others, dh_like, dh_dislike, bf_put_to_breast, bf_Breast_fed_up_to, bf_introduction_of_food_at, mp_m_menu, mp_m_ingredients, mp_m_quantity, mp_m_time, mp_bf_menu, mp_bf_ingredients, mp_bf_quantity, mp_bf_time, mp_l_menu, mp_l_ingredients, mp_l_quantity, mp_l_time, mp_s_menu, mp_s_ingredients, mp_s_quantity, mp_s_time, mp_d_menu, mp_d_ingredients, mp_d_quantity, mp_d_time, mp_o_menu, mp_o_ingredients, mp_o_quantity, mp_o_time, cre_biscuits, cre_khara_mixture, cre_bread, cre_chocolates, cre_chips, cre_soft_drinks, cre_other, sq_aitamin_a, sq_iron_n_folic_acid, sq_b_complex, created_by, last_edited_by, create_at, last_edited_at', 'safe', 'on' => 'search'),
         );
     }
 
@@ -224,34 +224,11 @@ class MdnaChildMdl extends CActiveRecord {
         return Yii::app()->params['childProfile'];
     }
 
-    private $age;
-    private $fromBirthdate;
-
-    public function getFromBirthdate() {
-        return $this->fromBirthdate;
-    }
-
-    public function setFromBirthdatee($fromBirthdate) {
-        $this->fromBirthdate = $fromBirthdate;
-    }
-
-    private $toBirthdate;
-
-    public function getToBirthdate() {
-        return $this->toBirthdate;
-    }
-
-    public function setToBirthdate($toBirthdate) {
-        $this->toBirthdate = $toBirthdate;
-    }
+    public $age;
 
     public function getAge() {
-//        return date('Y-m-d', strtotime("-" . round((strtotime('now') - strtotime($this->dob)) / (60 * 60 * 24 * 365), 1, PHP_ROUND_HALF_DOWN) . "years", time()));//round((strtotime('now') - strtotime($this->dob)) / (60 * 60 * 24 * 365), 1, PHP_ROUND_HALF_DOWN); //$this->age =  date_create($this->dob)->diff(new DateTime)->y.".".date_create($data->dob)->diff(new DateTime)->m;
-//    $dat = strtotime('now') - ((strtotime('now') - strtotime($this->dob)) / (60 * 60 * 24 * 365.26))*31556926;
-//   return date("Y-m-d",$dat);
-//        $dat = ((strtotime('now') - strtotime($this->dob)) / (60 * 60 * 24 * 365.26))*31556926;
-//        return date("Y-m-d",$dat);
-        return round((strtotime('now') - strtotime($this->dob)) / (60 * 60 * 24 * 365.26), 1, PHP_ROUND_HALF_DOWN);
+        if (!is_array($this->dob))
+            return round((strtotime('now') - strtotime($this->dob)) / (31556925.9747), 1, PHP_ROUND_HALF_DOWN);
     }
 
     public function setAge($age) {
@@ -282,10 +259,9 @@ class MdnaChildMdl extends CActiveRecord {
         $criteria->compare('sr_no_wnc', $this->sr_no_wnc, true);
         $criteria->compare('name', $this->name, true);
         $criteria->compare('phc_name', $this->phc_name, true);
-//        $criteria->compare('dob', $this->dob, true);
         $criteria->compare('sex', $this->sex, false);
-        $criteria->mergeWith($this->ageRangeSearchCriteria('dob', $this->fromBirthdate, $this->toBirthdate));
-//        $criteria->mergeWith($this->dateRangeSearchCriteria('dobs', $this->dob));  
+        $criteria->mergeWith($this->dateRangeSearchCriteria('dob', $this->dob));
+        $criteria->mergeWith($this->ageRangeSearchCriteria('dob', $this->age));
 
         $criteria->compare('caste', $this->caste, false);
         $criteria->compare('street', $this->street, true);

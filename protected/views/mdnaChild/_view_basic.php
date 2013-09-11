@@ -1,4 +1,5 @@
 <?php
+
 $this->widget('zii.widgets.CDetailView', array(
     'data' => $model,
     'attributes' => array(
@@ -8,7 +9,10 @@ $this->widget('zii.widgets.CDetailView', array(
         'name',
         'phc_name',
         'dob',
-        'age',
+        array(
+            'name' => 'age',
+            'value' => $model->getAge(),
+        ),
         'sex',
         'caste',
         'street',

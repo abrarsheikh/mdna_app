@@ -69,11 +69,9 @@ $this->widget('zii.widgets.grid.CGridView', array(
         //'id',
         'taluk_code',
         'name',
-        'dob',
-        'age',
 //        array(
 //            'name' => 'age',
-//            'value' => '$data->age',
+//            'value' => '$data->getAge()',
 //        ),
         /*
           'sex',

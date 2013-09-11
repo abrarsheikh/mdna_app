@@ -115,12 +115,10 @@
         } else if ($searchConfig->age != 'N' && $searchConfig->age == 'R') {
             $attribute = 'age';
             echo $form->labelEx($model, 'age');
-//            for ($i = 0; $i <= 1; $i++) {
-//                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
-//                echo $form->textField($model, $attribute . "[$i]");
-//            }
-            echo $form->textField($model, 'fromBirthdate');
-            echo $form->textField($model, 'toBirthdate');
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
         }
         ?> 
     </div>
