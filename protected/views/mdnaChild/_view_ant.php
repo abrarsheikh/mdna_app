@@ -1,20 +1,46 @@
-<?php
-$dataProvider = $anthropometry->search();
-$criteria = $dataProvider->getCriteria();
-$criteria->params = array(':id_a' => $model->taluk_code);
+<div class="row-fluid">
+    <div class="span6">
+        <?php
+        $dataProvider = $anthropometry->search();
+        $criteria = $dataProvider->getCriteria();
+        $criteria->params = array(':id_a' => $model->taluk_code);
 
-$dataProvider->setCriteria($criteria);
-$this->widget('zii.widgets.grid.CGridView', array(
-    'id' => 'mdna-child-a-mdl-grid',
-    'dataProvider' => $dataProvider,
-    'columns' => array(
-        'weight',
-        'height',
-        'muac',
-        'date',
-    ),
-));
-?>
+        $dataProvider->setCriteria($criteria);
+        $this->widget('zii.widgets.grid.CGridView', array(
+            'id' => 'mdna-child-a-mdl-grid',
+            'dataProvider' => $dataProvider,
+            'columns' => array(
+                'weight',
+                'height',
+                'muac',
+                'date',
+                array(
+                    'class' => 'CButtonColumn',
+                    'template' => '{view}',
+                    'buttons' => array(
+                        'view' => array(
+                            'url' => 'Yii::app()->createUrl("/mdnaChildAnthropometryMdl/view", array("id" => $data["id"]))',
+                            'options' => array(
+                                'ajax' => array(
+                                    'type' => 'POST',
+                                    'url' => "js:$(this).attr('href')",
+                                    'update' => '#detail-section',
+                                ),
+                            ),
+                        ), // view button
+                        'update' => array(
+                        ), // update button
+                        'delete' => array
+                        (
+                        ),
+                    ),
+                ),
+            ),
+        ));
+        ?>
+
+    </div>
+</div>
 
 <div class="row-fluid">
     <?php
