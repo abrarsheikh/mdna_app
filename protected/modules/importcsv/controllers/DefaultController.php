@@ -174,7 +174,11 @@ class DefaultController extends Controller {
                                     $oldItems = $model->selectRows($table, $tableKey);
                                 }
 
-                                $filecontent = file($uploadfile);
+//                                $filecontent = file($uploadfile, FILE_IGNORE_NEW_LINES);
+                                $file_handle = fopen($uploadfile, 'r');
+                                while (!feof($file_handle)) {
+                                    $filecontent[] = fgetcsv($file_handle);
+                                }
                                 $lengthFile = sizeof($filecontent);
                                 $insertCounter = 0;
                                 $stepsOk = 0;
@@ -188,8 +192,8 @@ class DefaultController extends Controller {
 
                                     for ($i = 0; $i < $lengthFile; $i++) {
                                         if ($i != 0 && $filecontent[$i] != '') {
-                                            $csvLine = ($textDelimiter) ? str_getcsv($filecontent[$i], $delimiter, $textDelimiter) : str_getcsv($filecontent[$i], $delimiter);
-
+//                                            $csvLine = ($textDelimiter) ? str_getcsv($filecontent[$i], $delimiter, $textDelimiter) : str_getcsv($filecontent[$i], $delimiter);
+                                              $csvLine = $filecontent[$i];
                                             //Mode 1. insert All
 
                                             if ($mode == 1) {
