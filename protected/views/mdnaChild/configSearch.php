@@ -32,11 +32,7 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 
     <?php echo $form->errorSummary($model); ?>
 
-    <div class="row">
-        <?php echo $form->labelEx($model,'id'); ?>
-        <?php echo $form->checkBox($model,'id', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
-    </div>
-
+    
     <div class="row">
         <?php echo $form->labelEx($model,'taluk_code'); ?>
         <?php echo $form->checkBox($model,'taluk_code', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
@@ -185,6 +181,21 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
     <div class="row">
         <?php echo $form->labelEx($model,'fi_no_sister'); ?>
         <?php echo $form->checkBox($model,'fi_no_sister', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+    </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model,'weight'); ?>
+        <?php echo $form->dropDownList($model,'weight', Yii::app()->params['searchConfig_dd']); ?>
+    </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model,'height'); ?>
+        <?php echo $form->dropDownList($model,'height', Yii::app()->params['searchConfig_dd']); ?>
+    </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model,'muac'); ?>
+        <?php echo $form->dropDownList($model,'muac', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
@@ -789,32 +800,32 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_hb'); ?>
-        <?php echo $form->checkBox($model,'hgm_hb', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_hb', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_mcv'); ?>
-        <?php echo $form->checkBox($model,'hgm_mcv', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_mcv', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_rbc'); ?>
-        <?php echo $form->checkBox($model,'hgm_rbc', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_rbc', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_mch'); ?>
-        <?php echo $form->checkBox($model,'hgm_mch', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_mch', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_pcv'); ?>
-        <?php echo $form->checkBox($model,'hgm_pcv', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_pcv', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_mchc'); ?>
-        <?php echo $form->checkBox($model,'hgm_mchc', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_mchc', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
@@ -834,22 +845,22 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_platelet_count'); ?>
-        <?php echo $form->checkBox($model,'hgm_platelet_count', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_platelet_count', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_dc_wbc'); ?>
-        <?php echo $form->checkBox($model,'hgm_dc_wbc', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_dc_wbc', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_dc_neutrophils'); ?>
-        <?php echo $form->checkBox($model,'hgm_dc_neutrophils', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_dc_neutrophils', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_dc_eosinophils'); ?>
-        <?php echo $form->checkBox($model,'hgm_dc_eosinophils', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_dc_eosinophils', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
@@ -859,12 +870,12 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_dc_lymphocytes'); ?>
-        <?php echo $form->checkBox($model,'hgm_dc_lymphocytes', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_dc_lymphocytes', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_dc_monocytes'); ?>
-        <?php echo $form->checkBox($model,'hgm_dc_monocytes', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_dc_monocytes', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
@@ -874,7 +885,7 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_dc_retieulocyte'); ?>
-        <?php echo $form->checkBox($model,'hgm_dc_retieulocyte', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_dc_retieulocyte', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
@@ -884,7 +895,7 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_dc_promyelocyte'); ?>
-        <?php echo $form->checkBox($model,'hgm_dc_promyelocyte', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_dc_promyelocyte', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
@@ -904,7 +915,7 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 
     <div class="row">
         <?php echo $form->labelEx($model,'hgm_dc_rdw'); ?>
-        <?php echo $form->checkBox($model,'hgm_dc_rdw', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'hgm_dc_rdw', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">
@@ -949,7 +960,7 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 
     <div class="row">
         <?php echo $form->labelEx($model,'lab_bor'); ?>
-        <?php echo $form->checkBox($model,'lab_bor', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        <?php echo $form->dropDownList($model,'lab_bor', Yii::app()->params['searchConfig_dd']); ?>
     </div>
 
     <div class="row">

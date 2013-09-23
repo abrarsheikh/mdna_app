@@ -39,6 +39,7 @@
  * @property string $ps_impression
  * @property string $lab_urine_profile
  * @property string $lab_bor
+ * @property string $is_active
  *
  * The followings are the available model relations:
  * @property MdnaChildTbl $idA

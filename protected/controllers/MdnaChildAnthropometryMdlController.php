@@ -50,6 +50,8 @@ class MdnaChildAnthropometryMdlController extends Controller {
 
         if (isset($_POST['MdnaChildAnthropometryMdl'])) {
             $model->attributes = $_POST['MdnaChildAnthropometryMdl'];
+            Yii::app()->db->createCommand("update mdna_child_anthropometry_tbl set is_active='N' WHERE id_a = '$model->id_a'")->query();
+            $model->is_active = 'Y';
             if ($model->save())
                 $this->redirect(array('mdnaChild/view', 'id' => MdnaChildMdl::model()->findByAttributes(array('taluk_code' => $model->id_a))->id));
         }
@@ -97,6 +99,25 @@ class MdnaChildAnthropometryMdlController extends Controller {
      * @param integer $id the ID of the model to be deleted
      */
     public function actionDelete($id) {
+        $taluk_code = $this->loadModel($id)->id_a;
+        $Criteria = new CDbCriteria();
+        $Criteria->condition = "id_a = '$taluk_code'";
+        $results = MdnaChildLabTbl::model()->findAll($Criteria);
+        $count = count($results);
+        unset($results);
+        unset($Criteria);
+        if ($count > 1) {
+            $Criteria = new CDbCriteria();
+            $Criteria->condition = "id_a = '$taluk_code'";
+            $Criteria->order = "date DESC";
+            $Criteria->limit = 1;
+            $record = MdnaChildAnthropometryMdl::model()->find($Criteria);
+            $record->is_active = 'Y';
+            $record->save();
+            unset($results);
+            unset($Criteria);
+            unset($record);
+        }
         $this->loadModel($id)->delete();
 
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser

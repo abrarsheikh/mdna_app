@@ -187,6 +187,8 @@ class MdnaChildMdl extends CActiveRecord {
     public function rules() {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
+        $search_lab = "hgm_hb,  hgm_mcv,  hgm_rbc,  hgm_mch,  hgm_pcv,  hgm_mchc,  hgm_esr_mm,  hgm_bleeding_time,  hgm_clotting_time,  hgm_platelet_count,  hgm_dc_wbc,  hgm_dc_neutrophils,  hgm_dc_eosinophils,  hgm_dc_basophills, hgm_dc_lymphocytes, gm_dc_monocytes, hgm_dc_aec,  hgm_dc_retieulocyte,  hgm_dc_blast_cells,  hgm_dc_promyelocyte,  hgm_dc_myelocytes,  hgm_dc_metamyelocytes,  hgm_dc_stabforms,  hgm_dc_rdw,  hgn_sp_albumin,  hgn_sp_globulin,  hgn_sp_ag_ratio,  ps_rbc,  ps_wbc,  ps_platelets,  ps_impression,  lab_urine_profile,  lab_bor  ";
+        $search_ant = "weight, height, muac";
         return array(
             array('taluk_code, name, phc_name, dob, sex', 'required'),
             array('age, fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, gpe_lymphadenopathy', 'numerical', 'integerOnly' => true),
@@ -200,7 +202,7 @@ class MdnaChildMdl extends CActiveRecord {
             array('dor, fi_m_dob, fi_f_dob, age,      create_at, last_edited_at', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, taluk_code, sr_no_wnc, name, phc_name, dob, age, sex, caste, street, landmark, sam_no, district, talluka, name_of_anganwadi, name_of_AWW, ph_no, dor, fi_m_name, fi_m_dob, fi_m_education, fi_m_profession, fi_f_name, fi_f_dob, fi_f_education, fi_f_profession, fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, c_appetite, c_dairrhoea, c_vomiting, c_urinary, c_fever, c_cough, c_lethargy, c_swelling, ih_opv, ih_hepb, ih_bcg, ih_opv123, ih_dpt123, ih_hepb123, ih_mis_vita, ih_dpt_opv, ih_mis_bost, dh_breast_feeds, dh_other, dh_other_milk, dh_bottle_feeding, dh_comp_feeds, dh_age_of_comp, dh_no_of_feeds, gpe_heart_rate, gpe_respiratory_rate, gpe_chest_indrawing, gpe_visible_severe_wasting, gpe_bl_pedal_edema, gpe_bl_grade, gpe_alert_Irritable_lethargic, gpe_hair_changes, gpe_desc_hair_change, gpe_skin_changes, gpe_desc_skin_change, gpe_eye_signs_vit_a_def, gpe_desc_vit_a_def, gpe_ear_discharge, gpe_desc_ear_discharge, gpe_mouth_glossitis, gpe_pallor, gpe_pallor_some_sever, gpe_lymphadenopathy, gpe_desc_ymphadenopathy, gpe_if_diarrhoea, se_respitary, se_cardio_vascular, se_abdominal, se_central_nervous, ir_Hb, ir_leukocyte_count, ir_blood_glucose, ir_blood_culture, ir_urine_routine, ir_urine_cs, ir_chest_xray, ir_monthoux_test, ci_malnutritionutrition, ci_diagnosi, m_domiciliaty, m_medical, m_Nutritional, r_higher_facility, fuw1, fuw2, fuw3, fuw4, fum2, fum4, ep_cereals, ep_pulses, ep_oilseeds, ep_milk_products, ep_fruits, ep_coloured_vegetable, ep_other_vegetables, ep_oils_fat, ep_egg, ep_fleshy_foods, ep_sugar, ep_others, dh_like, dh_dislike, bf_put_to_breast, bf_Breast_fed_up_to, bf_introduction_of_food_at, mp_m_menu, mp_m_ingredients, mp_m_quantity, mp_m_time, mp_bf_menu, mp_bf_ingredients, mp_bf_quantity, mp_bf_time, mp_l_menu, mp_l_ingredients, mp_l_quantity, mp_l_time, mp_s_menu, mp_s_ingredients, mp_s_quantity, mp_s_time, mp_d_menu, mp_d_ingredients, mp_d_quantity, mp_d_time, mp_o_menu, mp_o_ingredients, mp_o_quantity, mp_o_time, cre_biscuits, cre_khara_mixture, cre_bread, cre_chocolates, cre_chips, cre_soft_drinks, cre_other, sq_aitamin_a, sq_iron_n_folic_acid, sq_b_complex, created_by, last_edited_by, create_at, last_edited_at', 'safe', 'on' => 'search'),
+            array("$search_lab, $search_ant, id, taluk_code, sr_no_wnc, name, phc_name, dob, age, sex, caste, street, landmark, sam_no, district, talluka, name_of_anganwadi, name_of_AWW, ph_no, dor, fi_m_name, fi_m_dob, fi_m_education, fi_m_profession, fi_f_name, fi_f_dob, fi_f_education, fi_f_profession, fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, c_appetite, c_dairrhoea, c_vomiting, c_urinary, c_fever, c_cough, c_lethargy, c_swelling, ih_opv, ih_hepb, ih_bcg, ih_opv123, ih_dpt123, ih_hepb123, ih_mis_vita, ih_dpt_opv, ih_mis_bost, dh_breast_feeds, dh_other, dh_other_milk, dh_bottle_feeding, dh_comp_feeds, dh_age_of_comp, dh_no_of_feeds, gpe_heart_rate, gpe_respiratory_rate, gpe_chest_indrawing, gpe_visible_severe_wasting, gpe_bl_pedal_edema, gpe_bl_grade, gpe_alert_Irritable_lethargic, gpe_hair_changes, gpe_desc_hair_change, gpe_skin_changes, gpe_desc_skin_change, gpe_eye_signs_vit_a_def, gpe_desc_vit_a_def, gpe_ear_discharge, gpe_desc_ear_discharge, gpe_mouth_glossitis, gpe_pallor, gpe_pallor_some_sever, gpe_lymphadenopathy, gpe_desc_ymphadenopathy, gpe_if_diarrhoea, se_respitary, se_cardio_vascular, se_abdominal, se_central_nervous, ir_Hb, ir_leukocyte_count, ir_blood_glucose, ir_blood_culture, ir_urine_routine, ir_urine_cs, ir_chest_xray, ir_monthoux_test, ci_malnutritionutrition, ci_diagnosi, m_domiciliaty, m_medical, m_Nutritional, r_higher_facility, fuw1, fuw2, fuw3, fuw4, fum2, fum4, ep_cereals, ep_pulses, ep_oilseeds, ep_milk_products, ep_fruits, ep_coloured_vegetable, ep_other_vegetables, ep_oils_fat, ep_egg, ep_fleshy_foods, ep_sugar, ep_others, dh_like, dh_dislike, bf_put_to_breast, bf_Breast_fed_up_to, bf_introduction_of_food_at, mp_m_menu, mp_m_ingredients, mp_m_quantity, mp_m_time, mp_bf_menu, mp_bf_ingredients, mp_bf_quantity, mp_bf_time, mp_l_menu, mp_l_ingredients, mp_l_quantity, mp_l_time, mp_s_menu, mp_s_ingredients, mp_s_quantity, mp_s_time, mp_d_menu, mp_d_ingredients, mp_d_quantity, mp_d_time, mp_o_menu, mp_o_ingredients, mp_o_quantity, mp_o_time, cre_biscuits, cre_khara_mixture, cre_bread, cre_chocolates, cre_chips, cre_soft_drinks, cre_other, sq_aitamin_a, sq_iron_n_folic_acid, sq_b_complex, created_by, last_edited_by, create_at, last_edited_at, ", 'safe', 'on' => 'search'),
         );
     }
 
@@ -225,6 +227,44 @@ class MdnaChildMdl extends CActiveRecord {
     }
 
     public $age;
+    //lab search variables
+    public $hgm_hb;
+    public $hgm_mcv;
+    public $hgm_rbc;
+    public $hgm_mch;
+    public $hgm_pcv;
+    public $hgm_mchc;
+    public $hgm_esr_mm;
+    public $hgm_bleeding_time;
+    public $hgm_clotting_time;
+    public $hgm_platelet_count;
+    public $hgm_dc_wbc;
+    public $hgm_dc_neutrophils;
+    public $hgm_dc_eosinophils;
+    public $hgm_dc_basophills;
+    public $hgm_dc_lymphocytes;
+    public $hgm_dc_monocytes;
+    public $hgm_dc_aec;
+    public $hgm_dc_retieulocyte;
+    public $hgm_dc_blast_cells;
+    public $hgm_dc_promyelocyte;
+    public $hgm_dc_myelocytes;
+    public $hgm_dc_metamyelocytes;
+    public $hgm_dc_stabforms;
+    public $hgm_dc_rdw;
+    public $hgn_sp_albumin;
+    public $hgn_sp_globulin;
+    public $hgn_sp_ag_ratio;
+    public $ps_rbc;
+    public $ps_wbc;
+    public $ps_platelets;
+    public $ps_impression;
+    public $lab_urine_profile;
+    public $lab_bor;
+    //antropomentry search variables
+    public $weight;
+    public $height;
+    public $muac;
 
     public function getAge() {
         if (!is_array($this->dob))
@@ -251,9 +291,99 @@ class MdnaChildMdl extends CActiveRecord {
             $criteria->params = array(':created_by' => Yii::app()->user->name);
         }
         $criteria->with = array(
-            'mdnaChildAnthropometryTbls',
-            'mdnaChildLabTbls',
+            'mdnaChildAnthropometryTbls'    => array(// this is for filtering
+                'select' => false,
+                'together' => true,
+            ),
+            'mdnaChildLabTbls' => array(// this is for filtering
+                'select' => false,
+                'together' => true,
+            ),
         );
+
+        //some testing going here       
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_hb', $this->hgm_hb));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_mcv', $this->hgm_mcv));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_rbc', $this->hgm_rbc));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_mch', $this->hgm_mch));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_pcv', $this->hgm_pcv));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_mchc', $this->hgm_mchc));
+        $criteria->compare('mdnaChildLabTbls.hgm_esr_mm', $this->hgm_esr_mm, true);
+        $criteria->compare('mdnaChildLabTbls.hgm_bleeding_time', $this->hgm_bleeding_time, true);
+        $criteria->compare('mdnaChildLabTbls.hgm_clotting_time', $this->hgm_clotting_time, true);
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_platelet_count', $this->hgm_platelet_count));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_dc_wbc', $this->hgm_dc_wbc));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_dc_neutrophils', $this->hgm_dc_neutrophils));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_dc_eosinophils', $this->hgm_dc_eosinophils));
+        $criteria->compare('mdnaChildLabTbls.hgm_dc_basophills', $this->hgm_dc_basophills, true);
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_dc_neutrophils', $this->hgm_dc_lymphocytes));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_dc_eosinophils', $this->hgm_dc_monocytes));
+        $criteria->compare('mdnaChildLabTbls.hgm_dc_aec', $this->hgm_dc_aec, true);
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_dc_retieulocyte', $this->hgm_dc_retieulocyte));
+        $criteria->compare('mdnaChildLabTbls.hgm_dc_blast_cells', $this->hgm_dc_blast_cells, true);
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_dc_promyelocyte', $this->hgm_dc_promyelocyte));
+        $criteria->compare('mdnaChildLabTbls.hgm_dc_myelocytes', $this->hgm_dc_myelocytes, true);
+        $criteria->compare('mdnaChildLabTbls.hgm_dc_metamyelocytes', $this->hgm_dc_metamyelocytes, true);
+        $criteria->compare('mdnaChildLabTbls.hgm_dc_stabforms', $this->hgm_dc_stabforms, true);
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_dc_rdw', $this->hgm_dc_rdw));
+        $criteria->compare('mdnaChildLabTbls.hgn_sp_albumin', $this->hgn_sp_albumin, true);
+        $criteria->compare('mdnaChildLabTbls.hgn_sp_globulin', $this->hgn_sp_globulin, true);
+        $criteria->compare('mdnaChildLabTbls.hgn_sp_ag_ratio', $this->hgn_sp_ag_ratio, true);
+        $criteria->compare('mdnaChildLabTbls.ps_rbc', $this->ps_rbc, true);
+        $criteria->compare('mdnaChildLabTbls.ps_wbc', $this->ps_wbc, true);
+        $criteria->compare('mdnaChildLabTbls.ps_platelets', $this->ps_platelets, true);
+        $criteria->compare('mdnaChildLabTbls.ps_impression', $this->ps_impression, true);
+        $criteria->compare('mdnaChildLabTbls.lab_urine_profile', $this->lab_urine_profile, true);
+        $criteria->mergeWith($this->dateRangeSearchCriteria('mdnaChildLabTbls.lab_bor', $this->lab_bor));
+
+        if (!empty($this->hgm_hb) ||
+                !empty($this->hgm_mcv) ||
+                !empty($this->hgm_rbc) ||
+                !empty($this->hgm_mch) ||
+                !empty($this->hgm_pcv) ||
+                !empty($this->hgm_mchc) ||
+                !empty($this->hgm_esr_mm) ||
+                !empty($this->hgm_bleeding_time) ||
+                !empty($this->hgm_clotting_time) ||
+                !empty($this->hgm_platelet_count) ||
+                !empty($this->hgm_dc_wbc) ||
+                !empty($this->hgm_dc_neutrophils) ||
+                !empty($this->hgm_dc_eosinophils) ||
+                !empty($this->hgm_dc_basophills) ||
+                !empty($this->hgm_dc_lymphocytes) ||
+                !empty($this->hgm_dc_monocytes) ||
+                !empty($this->hgm_dc_aec) ||
+                !empty($this->hgm_dc_retieulocyte) ||
+                !empty($this->hgm_dc_blast_cells) ||
+                !empty($this->hgm_dc_promyelocyte) ||
+                !empty($this->hgm_dc_myelocytes) ||
+                !empty($this->hgm_dc_metamyelocytes) ||
+                !empty($this->hgm_dc_stabforms) ||
+                !empty($this->hgm_dc_rdw) ||
+                !empty($this->hgn_sp_albumin) ||
+                !empty($this->hgn_sp_globulin) ||
+                !empty($this->hgn_sp_ag_ratio) ||
+                !empty($this->ps_rbc) ||
+                !empty($this->ps_wbc) ||
+                !empty($this->ps_platelets) ||
+                !empty($this->ps_impression) ||
+                !empty($this->lab_urine_profile) ||
+                !empty($this->lab_bor)
+        )
+            $criteria->compare('mdnaChildLabTbls.is_active', 'Y', true);
+
+
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildAnthropometryTbls.weight', $this->weight));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildAnthropometryTbls.height', $this->height));
+        $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildAnthropometryTbls.muac', $this->muac));
+
+        if (!empty($this->weight) ||
+                !empty($this->height) ||
+                !empty($this->muac)
+        )
+            $criteria->compare('mdnaChildAnthropometryTbls.is_active', 'Y', true);
+        //end of testing
+
         $criteria->compare('id', $this->id, true);
         $criteria->compare('taluk_code', $this->taluk_code, true);
         $criteria->compare('sr_no_wnc', $this->sr_no_wnc, true);
@@ -436,6 +566,9 @@ class MdnaChildMdl extends CActiveRecord {
         return array(
             'dateRangeSearch' => array(
                 'class' => 'application.components.behaviors.EDateRangeSearchBehavior',
+            ),
+            'labRangeSearch' => array(
+                'class' => 'application.components.behaviors.ELabRangeSearchBehavior',
             ),
         );
     }

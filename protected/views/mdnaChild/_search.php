@@ -415,6 +415,69 @@
         </div>
 
     <?php } ?> 
+    
+    <div class="row">   
+        <?php
+        $attribute = 'weight';
+        $sc_var = $searchConfig->weight;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+    
+    <div class="row">   
+        <?php
+        $attribute = 'height';
+        $sc_var = $searchConfig->height;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+    
+    <div class="row">   
+        <?php
+        $attribute = 'muac';
+        $sc_var = $searchConfig->muac;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
 
     <?php if ($searchConfig->c_appetite != 'N') { ?>
         <div class="row">
@@ -1632,6 +1695,584 @@
         </div>
 
     <?php } ?> 
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_hb';
+        $sc_var = $searchConfig->hgm_hb;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_mcv';
+        $sc_var = $searchConfig->hgm_mcv;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_rbc';
+        $sc_var = $searchConfig->hgm_rbc;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_mch';
+        $sc_var = $searchConfig->hgm_mch;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_pcv';
+        $sc_var = $searchConfig->hgm_pcv;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_mchc';
+        $sc_var = $searchConfig->hgm_mchc;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_esr_mm';
+        $sc_var = $searchConfig->hgm_esr_mm;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_bleeding_time';
+        $sc_var = $searchConfig->hgm_bleeding_time;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_clotting_time';
+        $sc_var = $searchConfig->hgm_clotting_time;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_platelet_count';
+        $sc_var = $searchConfig->hgm_platelet_count;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_wbc';
+        $sc_var = $searchConfig->hgm_dc_wbc;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_neutrophils';
+        $sc_var = $searchConfig->hgm_dc_neutrophils;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_eosinophils';
+        $sc_var = $searchConfig->hgm_dc_eosinophils;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_basophills';
+        $sc_var = $searchConfig->hgm_dc_basophills;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_lymphocytes';
+        $sc_var = $searchConfig->hgm_dc_lymphocytes;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_monocytes';
+        $sc_var = $searchConfig->hgm_dc_monocytes;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_aec';
+        $sc_var = $searchConfig->hgm_dc_aec;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_retieulocyte';
+        $sc_var = $searchConfig->hgm_dc_retieulocyte;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_blast_cells';
+        $sc_var = $searchConfig->hgm_dc_blast_cells;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_promyelocyte';
+        $sc_var = $searchConfig->hgm_dc_promyelocyte;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_myelocytes';
+        $sc_var = $searchConfig->hgm_dc_myelocytes;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_metamyelocytes';
+        $sc_var = $searchConfig->hgm_dc_metamyelocytes;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_stabforms';
+        $sc_var = $searchConfig->hgm_dc_stabforms;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <div class="row">   
+        <?php
+        $attribute = 'hgm_dc_rdw';
+        $sc_var = $searchConfig->hgm_dc_rdw;
+        if ($sc_var != 'N' && $sc_var == 'Y') {
+            ?>
+            <?php echo $form->labelEx($model, $attribute); ?>
+            <?php echo $form->textField($model, $attribute); ?>            
+            <?php
+        } else if ($sc_var != 'N' && $sc_var == 'R') {
+            echo $form->labelEx($model, $attribute);
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                echo $form->textField($model, $attribute . "[$i]");
+            }
+        }
+        unset($attribute);
+        unset($sc_var);
+        ?> 
+    </div>
+
+    <?php if ($searchConfig->hgn_sp_albumin != 'N') { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'hgn_sp_albumin'); ?>
+
+            <?php echo $form->textField($model, 'hgn_sp_albumin', array('size' => 10, 'maxlength' => 10)); ?>
+
+        </div>
+
+    <?php } ?> 
+
+    <?php if ($searchConfig->hgn_sp_globulin != 'N') { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'hgn_sp_globulin'); ?>
+
+            <?php echo $form->textField($model, 'hgn_sp_globulin', array('size' => 10, 'maxlength' => 10)); ?>
+
+        </div>
+
+    <?php } ?> 
+
+    <?php if ($searchConfig->hgn_sp_ag_ratio != 'N') { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'hgn_sp_ag_ratio'); ?>
+
+            <?php echo $form->textField($model, 'hgn_sp_ag_ratio', array('size' => 10, 'maxlength' => 10)); ?>
+
+        </div>
+
+    <?php } ?> 
+
+    <?php if ($searchConfig->ps_rbc != 'N') { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'ps_rbc'); ?>
+
+            <?php echo $form->textField($model, 'ps_rbc', array('size' => 60, 'maxlength' => 100)); ?>
+
+        </div>
+
+    <?php } ?> 
+
+    <?php if ($searchConfig->ps_wbc != 'N') { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'ps_wbc'); ?>
+
+            <?php echo $form->textField($model, 'ps_wbc', array('size' => 60, 'maxlength' => 100)); ?>
+
+        </div>
+
+    <?php } ?> 
+
+    <?php if ($searchConfig->ps_platelets != 'N') { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'ps_platelets'); ?>
+
+            <?php echo $form->textField($model, 'ps_platelets', array('size' => 60, 'maxlength' => 100)); ?>
+
+        </div>
+
+    <?php } ?> 
+
+    <?php if ($searchConfig->ps_impression != 'N') { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'ps_impression'); ?>
+
+            <?php echo $form->textField($model, 'ps_impression', array('size' => 60, 'maxlength' => 100)); ?>
+
+        </div>
+
+    <?php } ?> 
+
+    <?php if ($searchConfig->lab_urine_profile != 'N') { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'lab_urine_profile'); ?>
+
+            <?php echo $form->textField($model, 'lab_urine_profile', array('size' => 60, 'maxlength' => 100)); ?>
+
+        </div>
+
+    <?php } ?> 
+
+    <div class="row">
+        <?php if ($searchConfig->lab_bor != 'N' && $searchConfig->lab_bor == 'Y') { ?>
+            <?php echo $form->labelEx($model, 'lab_bor'); ?>
+            <?php
+            $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                'name' => 'bookdate', // the name of the field
+                'model' => $model, // Model object
+                'attribute' => 'lab_bor', // Attribute name          
+                'options' => array(
+                    'showAnim' => 'fold',
+                    'dateFormat' => 'yy-mm-dd', // optional date formatting
+                    'debug' => true,
+                ),
+                'htmlOptions' => array(
+                    'style' => 'height:20px;'
+                ),
+            ));
+            ?>
+            <?php
+        } else if ($searchConfig->lab_bor != 'N' && $searchConfig->lab_bor == 'R') {
+            echo $form->labelEx($model, 'lab_bor');
+            $attribute = 'lab_bor';
+            for ($i = 0; $i <= 1; $i++) {
+                echo ($i == 0 ? Yii::t('main', 'From:') : Yii::t('main', 'To:'));
+                $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'id' => CHtml::activeId($model, $attribute . '_' . $i),
+                    'model' => $model,
+                    'attribute' => $attribute . "[$i]",
+                    'options' => array(
+                        'showAnim' => 'fold',
+                        'dateFormat' => 'yy-mm-dd', // optional date formatting
+                        'debug' => true,
+                    ),
+                ));
+            }
+        }
+        ?> 
+    </div>
+
 
     <?php if ($searchConfig->last_edited_by != 'N') { ?>
 
