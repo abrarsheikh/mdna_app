@@ -3,7 +3,6 @@
 $this->widget('zii.widgets.CDetailView', array(
     'data' => $model,
     'attributes' => array(
-        'id',
         'taluk_code',
         'sr_no_wnc',
         'name',

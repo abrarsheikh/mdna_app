@@ -42,6 +42,19 @@ return array(
     // error messages
     'anthropometry_01' => "Anthropometry enteries can be made only after the child file is created",
     'lab_01' => "Lab Report enteries can be made only after the child file is created",
+    
+    
+    //messages, title
+    'search_config_title'   =>  "Search Configuration Window",
+    'admin_page_title'      =>  "Manage Child Profile",
+    'view_child_profile_title'  =>  "View Child Profile",
+    'update_child_profile_title' => "Update Child Profile",
+    'view_ant'          =>  "Anthropometry Detail",
+    'update_ant'                =>  "Update Anthropometry",
+    'view_lab'          =>  "Lab Report",
+    'update_lab'        => "Update Lab Report",
+    'create_child_pro'          => "Create Child Profile",
+    
     //field labels
     'childProfile' => array(
         'id' => 'ID',

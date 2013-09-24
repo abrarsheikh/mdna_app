@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'My Web Application',
+    'name' => 'MDNA App',
     'theme' => 'abound',
     // preloading 'log' component
     'preload' => array('log'),
@@ -54,7 +54,7 @@ return array(
             # login form path
             'loginUrl' => array('/site/login'),
             # page after login
-            'returnUrl' => array('/user/profile'),
+            'returnUrl' => array('/mdnaChild/admin'),
             # page after logout
             'returnLogoutUrl' => array('/site/login'),
             'tableUsers' => 'users',

@@ -4,7 +4,7 @@
 /* @var $anthropometry MdnaChildAnthropometryMdl */
 
 $this->breadcrumbs = array(
-    'Mdna Child Mdls' => array('index'),
+    'Child Profiles' => array('index'),
     $model->name,
 );
 
@@ -17,9 +17,7 @@ $this->menu = array(
 );
 ?>
 
-
-
-<h1>View Child Profile (<?php echo $model->taluk_code; ?>)</h1>
+<h1><?php echo Yii::app()->params['view_child_profile_title'] ?> (<?php echo $model->taluk_code; ?>)</h1>
 
 <?php
     $this->widget('zii.widgets.jui.CJuiTabs', array(

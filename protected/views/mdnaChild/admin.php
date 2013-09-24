@@ -4,7 +4,7 @@
 /* @var $searchConfig MdnaSearchConfig */
 
 $this->breadcrumbs = array(
-    'Mdna Child Mdls' => array('index'),
+    'Child Profiles' => array('index'),
     'Manage',
 );
 
@@ -27,7 +27,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Child Profile</h1>
+<h1><?php echo Yii::app()->params['admin_page_title'] ?></h1>
 
 <p>
     You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

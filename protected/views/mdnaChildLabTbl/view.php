@@ -6,7 +6,7 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
     'id' => 'mydialog',
     // additional javascript options for the dialog plugin
     'options' => array(
-        'title' => 'Dialog box 1',
+        'title' => Yii::app()->params['view_lab']." ($model->id_a)",
         'autoOpen' => true,
         'width' => 550,
         'height' => 470,
@@ -27,13 +27,11 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
 //);
 ?>
 
-<h1>View MdnaChildLabTbl #<?php echo $model->id; ?></h1>
+<h1></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
-		'id_a',
 		'hgm_hb',
 		'hgm_mcv',
 		'hgm_rbc',

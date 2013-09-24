@@ -8,7 +8,7 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
     'id' => 'configDialog',
     // additional javascript options for the dialog plugin
     'options' => array(
-        'title' => 'Dialog box 1',
+        'title' =>  Yii::app()->params['search_config_title'],
         'autoOpen' => true,
         'width' => 550,
         'height' => 470,
@@ -26,9 +26,6 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
                 'enableAjaxValidation' => false,
             ));
     ?>
-
-
-    <p class="note">Fields with <span class="required">*</span> are required.</p>
 
     <?php echo $form->errorSummary($model); ?>
 
