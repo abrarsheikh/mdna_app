@@ -1,6 +1,7 @@
 <div class="row-fluid">
     <div class="span6">
         <?php
+        $this->widget('ext.widgets.loading.LoadingWidget');
         $dataProvider = $anthropometry->search();
         $criteria = $dataProvider->getCriteria();
         $criteria->params = array(':id_a' => $model->taluk_code);
@@ -25,6 +26,12 @@
                                     'type' => 'POST',
                                     'url' => "js:$(this).attr('href')",
                                     'update' => '#detail-section',
+                                    'beforeSend' => 'function(data){
+                                            Loading.show();
+                                        }',
+                                    'complete' => 'function(data){
+                                            Loading.hide();
+                                        }',
                                 ),
                             ),
                         ), // view button

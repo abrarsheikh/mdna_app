@@ -1,6 +1,7 @@
 <div class="row-fluid">
     <div class="span6">
         <?php
+        $this->widget('ext.widgets.loading.LoadingWidget');
         if (isset($model->taluk_code) && $model->taluk_code != '') {
             $dataProvider = $anthropometry->search();
             $criteria = $dataProvider->getCriteria();
@@ -23,6 +24,12 @@
                                         'type' => 'POST',
                                         'url' => "js:$(this).attr('href')",
                                         'update' => '#detail-section',
+                                        'beforeSend' => 'function(data){
+                                            Loading.show();
+                                        }',
+                                        'complete' => 'function(data){
+                                            Loading.hide();
+                                        }',
                                     ),
                                 ),
                             ), // view button
@@ -33,6 +40,12 @@
                                         'type' => 'POST',
                                         'url' => "js:$(this).attr('href')",
                                         'update' => '#detail-section',
+                                        'beforeSend' => 'function(data){
+                                            Loading.show();
+                                        }',
+                                        'complete' => 'function(data){
+                                            Loading.hide();
+                                        }',
                                     ),
                                 ),
                             ), // update button
@@ -55,6 +68,12 @@
                 'data' => "js:{ 'id_a': '$code'}",
                 'url' => "js:$(this).attr('href')",
                 'update' => '#detail-section',
+                'beforeSend' => 'function(data){
+                    Loading.show();
+                }',
+                'complete' => 'function(data){
+                    Loading.hide();
+                }',
                     )
             );
         } else {

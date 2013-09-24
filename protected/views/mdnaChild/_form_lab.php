@@ -2,6 +2,7 @@
 <?php
 
 if (isset($model->id) && $model->id != '') {
+    $this->widget('ext.widgets.loading.LoadingWidget');
     $dataProvider = $labReport->search();
     $criteria = $dataProvider->getCriteria();
     $criteria->params = array(':id_a' => $model->taluk_code);
@@ -25,6 +26,12 @@ if (isset($model->id) && $model->id != '') {
                                 'type' => 'POST',
                                 'url' => "js:$(this).attr('href')",
                                 'update' => '#detail-section',
+                                'beforeSend' => 'function(data){
+                                            Loading.show();
+                                        }',
+                                'complete' => 'function(data){
+                                            Loading.hide();
+                                        }',
                             ),
                         ),
                     ), // view button
@@ -35,6 +42,12 @@ if (isset($model->id) && $model->id != '') {
                                 'type' => 'POST',
                                 'url' => "js:$(this).attr('href')",
                                 'update' => '#detail-section',
+                                'beforeSend' => 'function(data){
+                                            Loading.show();
+                                        }',
+                                'complete' => 'function(data){
+                                            Loading.hide();
+                                        }',
                             ),
                         ),
                     ), // update button
@@ -57,6 +70,12 @@ if (isset($model->id) && $model->id != '') {
         'data' => "js:{ 'id_a':'$model->taluk_code' }",
         'url' => "js:$(this).attr('href')",
         'update' => '#detail-section',
+        'beforeSend' => 'function(data){
+                                            Loading.show();
+                                        }',
+        'complete' => 'function(data){
+                                            Loading.hide();
+                                        }',
             )
     );
 } else {

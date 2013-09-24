@@ -37,10 +37,17 @@ $('.search-form form').submit(function(){
 
 
 <?php
+$this->widget('ext.widgets.loading.LoadingWidget');
 echo CHtml::ajaxLink(
         'Search Comfig', Yii::app()->createUrl("/mdnaChild/configSearch"), array(
     'url' => "js:$(this).attr('href')",
     'update' => '#config-section',
+    'beforeSend' => 'function(data){
+            Loading.show();
+        }',
+    'complete' => 'function(data){
+            Loading.hide();
+        }'
         )
 );
 ?>
