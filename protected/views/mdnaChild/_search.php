@@ -2233,6 +2233,51 @@
         </div>
 
     <?php } ?> 
+    
+    <?php if ($searchConfig->hgm_hb_status != 'N' && $searchConfig->hgm_hb_status != null) { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'hgm_hb_status'); ?>
+
+            <?php echo $form->dropDownList($model,'hgm_hb_status', Yii::app()->params['blood_range_search_dd']); ?>
+
+        </div>
+
+    <?php } ?> 
+    
+    <?php if ($searchConfig->hgm_rbc_status != 'N' && $searchConfig->hgm_rbc_status != null) { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'hgm_rbc_status'); ?>
+
+            <?php echo $form->dropDownList($model,'hgm_rbc_status', Yii::app()->params['blood_range_search_dd']); ?>
+
+        </div>
+
+    <?php } ?> 
+    
+    <?php if ($searchConfig->hgm_dc_wbc_status != 'N'  && $searchConfig->hgm_dc_wbc_status != null) { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'hgm_dc_wbc_status'); ?>
+
+            <?php echo $form->dropDownList($model,'hgm_dc_wbc_status', Yii::app()->params['blood_range_search_dd']); ?>
+
+        </div>
+
+    <?php } ?> 
+    
+    <?php if ($searchConfig->hgm_platelet_count_status != 'N' && $searchConfig->hgm_platelet_count_status != null) { ?>
+
+        <div class="row">           
+            <?php echo $form->labelEx($model, 'hgm_platelet_count_status'); ?>
+
+            <?php echo $form->dropDownList($model,'hgm_platelet_count_status', Yii::app()->params['blood_range_search_dd']); ?>
+
+        </div>
+
+    <?php } ?> 
+        
 
     <div class="row">
         <?php if ($searchConfig->lab_bor != 'N' && $searchConfig->lab_bor == 'Y') { ?>

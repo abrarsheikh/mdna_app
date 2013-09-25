@@ -959,6 +959,27 @@ $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
         <?php echo $form->labelEx($model,'lab_bor'); ?>
         <?php echo $form->dropDownList($model,'lab_bor', Yii::app()->params['searchConfig_dd']); ?>
     </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model,'hgm_hb_status'); ?>
+        <?php echo $form->checkBox($model,'hgm_hb_status', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+    </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model,'hgm_rbc_status'); ?>
+        <?php echo $form->checkBox($model,'hgm_rbc_status', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+    </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model,'hgm_dc_wbc_status'); ?>
+        <?php echo $form->checkBox($model,'hgm_dc_wbc_status', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+        
+    </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model,'hgm_platelet_count_status'); ?>
+        <?php echo $form->checkBox($model,'hgm_platelet_count_status', array('value' => 'Y', 'uncheckValue' => 'N')); ?>
+    </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'created_by'); ?>

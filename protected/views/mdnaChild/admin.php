@@ -76,10 +76,11 @@ $this->widget('zii.widgets.grid.CGridView', array(
         //'id',
         'taluk_code',
         'name',
-//        array(
-//            'name' => 'age',
-//            'value' => '$data->getAge()',
-//        ),
+        array(
+            'name' => 'blood_test_status',
+            'value' => '$data->getblood_test_status()',
+            'type' => 'raw',
+        ),
         /*
           'sex',
           'caste',

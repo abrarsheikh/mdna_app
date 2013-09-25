@@ -98,7 +98,7 @@ class MdnaChildLabTblController extends Controller {
         unset($Criteria);
         if ($count > 1) {
             $Criteria = new CDbCriteria();
-            $Criteria->condition = "id_a = '$taluk_code'";
+            $Criteria->condition = "id_a = '$taluk_code' AND id <> $id";
             $Criteria->order = "lab_bor DESC";
             $Criteria->limit = 1;
             $record = MdnaChildLabTbl::model()->find($Criteria);

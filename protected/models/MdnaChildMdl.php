@@ -189,6 +189,7 @@ class MdnaChildMdl extends CActiveRecord {
         // will receive user inputs.
         $search_lab = "hgm_hb,  hgm_mcv,  hgm_rbc,  hgm_mch,  hgm_pcv,  hgm_mchc,  hgm_esr_mm,  hgm_bleeding_time,  hgm_clotting_time,  hgm_platelet_count,  hgm_dc_wbc,  hgm_dc_neutrophils,  hgm_dc_eosinophils,  hgm_dc_basophills, hgm_dc_lymphocytes, gm_dc_monocytes, hgm_dc_aec,  hgm_dc_retieulocyte,  hgm_dc_blast_cells,  hgm_dc_promyelocyte,  hgm_dc_myelocytes,  hgm_dc_metamyelocytes,  hgm_dc_stabforms,  hgm_dc_rdw,  hgn_sp_albumin,  hgn_sp_globulin,  hgn_sp_ag_ratio,  ps_rbc,  ps_wbc,  ps_platelets,  ps_impression,  lab_urine_profile,  lab_bor  ";
         $search_ant = "weight, height, muac";
+        $status = 'hgm_hb_status, hgm_rbc_status,  hgm_dc_wbc_status, hgm_platelet_count_status';
         return array(
             array('taluk_code, name, phc_name, dob, sex', 'required'),
             array('age, fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, gpe_lymphadenopathy', 'numerical', 'integerOnly' => true),
@@ -202,7 +203,7 @@ class MdnaChildMdl extends CActiveRecord {
             array('dor, fi_m_dob, fi_f_dob, age,      create_at, last_edited_at', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array("$search_lab, $search_ant, id, taluk_code, sr_no_wnc, name, phc_name, dob, age, sex, caste, street, landmark, sam_no, district, talluka, name_of_anganwadi, name_of_AWW, ph_no, dor, fi_m_name, fi_m_dob, fi_m_education, fi_m_profession, fi_f_name, fi_f_dob, fi_f_education, fi_f_profession, fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, c_appetite, c_dairrhoea, c_vomiting, c_urinary, c_fever, c_cough, c_lethargy, c_swelling, ih_opv, ih_hepb, ih_bcg, ih_opv123, ih_dpt123, ih_hepb123, ih_mis_vita, ih_dpt_opv, ih_mis_bost, dh_breast_feeds, dh_other, dh_other_milk, dh_bottle_feeding, dh_comp_feeds, dh_age_of_comp, dh_no_of_feeds, gpe_heart_rate, gpe_respiratory_rate, gpe_chest_indrawing, gpe_visible_severe_wasting, gpe_bl_pedal_edema, gpe_bl_grade, gpe_alert_Irritable_lethargic, gpe_hair_changes, gpe_desc_hair_change, gpe_skin_changes, gpe_desc_skin_change, gpe_eye_signs_vit_a_def, gpe_desc_vit_a_def, gpe_ear_discharge, gpe_desc_ear_discharge, gpe_mouth_glossitis, gpe_pallor, gpe_pallor_some_sever, gpe_lymphadenopathy, gpe_desc_ymphadenopathy, gpe_if_diarrhoea, se_respitary, se_cardio_vascular, se_abdominal, se_central_nervous, ir_Hb, ir_leukocyte_count, ir_blood_glucose, ir_blood_culture, ir_urine_routine, ir_urine_cs, ir_chest_xray, ir_monthoux_test, ci_malnutritionutrition, ci_diagnosi, m_domiciliaty, m_medical, m_Nutritional, r_higher_facility, fuw1, fuw2, fuw3, fuw4, fum2, fum4, ep_cereals, ep_pulses, ep_oilseeds, ep_milk_products, ep_fruits, ep_coloured_vegetable, ep_other_vegetables, ep_oils_fat, ep_egg, ep_fleshy_foods, ep_sugar, ep_others, dh_like, dh_dislike, bf_put_to_breast, bf_Breast_fed_up_to, bf_introduction_of_food_at, mp_m_menu, mp_m_ingredients, mp_m_quantity, mp_m_time, mp_bf_menu, mp_bf_ingredients, mp_bf_quantity, mp_bf_time, mp_l_menu, mp_l_ingredients, mp_l_quantity, mp_l_time, mp_s_menu, mp_s_ingredients, mp_s_quantity, mp_s_time, mp_d_menu, mp_d_ingredients, mp_d_quantity, mp_d_time, mp_o_menu, mp_o_ingredients, mp_o_quantity, mp_o_time, cre_biscuits, cre_khara_mixture, cre_bread, cre_chocolates, cre_chips, cre_soft_drinks, cre_other, sq_aitamin_a, sq_iron_n_folic_acid, sq_b_complex, created_by, last_edited_by, create_at, last_edited_at, ", 'safe', 'on' => 'search'),
+            array("$search_lab, $search_ant, $status, id, taluk_code, sr_no_wnc, name, phc_name, dob, age, sex, caste, street, landmark, sam_no, district, talluka, name_of_anganwadi, name_of_AWW, ph_no, dor, fi_m_name, fi_m_dob, fi_m_education, fi_m_profession, fi_f_name, fi_f_dob, fi_f_education, fi_f_profession, fi_size, fi_daily_income, fi_no_sibling, fi_no_brother, fi_no_sister, c_appetite, c_dairrhoea, c_vomiting, c_urinary, c_fever, c_cough, c_lethargy, c_swelling, ih_opv, ih_hepb, ih_bcg, ih_opv123, ih_dpt123, ih_hepb123, ih_mis_vita, ih_dpt_opv, ih_mis_bost, dh_breast_feeds, dh_other, dh_other_milk, dh_bottle_feeding, dh_comp_feeds, dh_age_of_comp, dh_no_of_feeds, gpe_heart_rate, gpe_respiratory_rate, gpe_chest_indrawing, gpe_visible_severe_wasting, gpe_bl_pedal_edema, gpe_bl_grade, gpe_alert_Irritable_lethargic, gpe_hair_changes, gpe_desc_hair_change, gpe_skin_changes, gpe_desc_skin_change, gpe_eye_signs_vit_a_def, gpe_desc_vit_a_def, gpe_ear_discharge, gpe_desc_ear_discharge, gpe_mouth_glossitis, gpe_pallor, gpe_pallor_some_sever, gpe_lymphadenopathy, gpe_desc_ymphadenopathy, gpe_if_diarrhoea, se_respitary, se_cardio_vascular, se_abdominal, se_central_nervous, ir_Hb, ir_leukocyte_count, ir_blood_glucose, ir_blood_culture, ir_urine_routine, ir_urine_cs, ir_chest_xray, ir_monthoux_test, ci_malnutritionutrition, ci_diagnosi, m_domiciliaty, m_medical, m_Nutritional, r_higher_facility, fuw1, fuw2, fuw3, fuw4, fum2, fum4, ep_cereals, ep_pulses, ep_oilseeds, ep_milk_products, ep_fruits, ep_coloured_vegetable, ep_other_vegetables, ep_oils_fat, ep_egg, ep_fleshy_foods, ep_sugar, ep_others, dh_like, dh_dislike, bf_put_to_breast, bf_Breast_fed_up_to, bf_introduction_of_food_at, mp_m_menu, mp_m_ingredients, mp_m_quantity, mp_m_time, mp_bf_menu, mp_bf_ingredients, mp_bf_quantity, mp_bf_time, mp_l_menu, mp_l_ingredients, mp_l_quantity, mp_l_time, mp_s_menu, mp_s_ingredients, mp_s_quantity, mp_s_time, mp_d_menu, mp_d_ingredients, mp_d_quantity, mp_d_time, mp_o_menu, mp_o_ingredients, mp_o_quantity, mp_o_time, cre_biscuits, cre_khara_mixture, cre_bread, cre_chocolates, cre_chips, cre_soft_drinks, cre_other, sq_aitamin_a, sq_iron_n_folic_acid, sq_b_complex, created_by, last_edited_by, create_at, last_edited_at, ", 'safe', 'on' => 'search'),
         );
     }
 
@@ -265,6 +266,70 @@ class MdnaChildMdl extends CActiveRecord {
     public $weight;
     public $height;
     public $muac;
+    //child current medical status
+    public $hgm_hb_status;
+    public $hgm_rbc_status;
+    public $hgm_dc_wbc_status;
+    public $hgm_platelet_count_status;
+    public $blood_test_status;
+
+    public function getblood_test_status() {
+        $result_label = '';
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("is_active=:is_active");
+        $criteria->addCondition("id_a=:id_a");
+        $criteria->params = array(
+            ':is_active' => 'Y',
+            ':id_a' => $this->taluk_code
+        );
+        $lab_rep = MdnaChildLabTbl::model()->find($criteria);
+
+        $value = $lab_rep['hgm_hb'];
+        $label = Yii::app()->params['childProfile']['hgm_hb'];
+        if (!empty($value) && $value != 0)
+            if ($value >= Yii::app()->params['hgm_hb']['moderate']['start'] && $value <= Yii::app()->params['hgm_hb']['moderate']['end'])
+                $result_label.= "<span class=\"label label-warning\">$label</span>";
+            else if ($value > Yii::app()->params['hgm_hb']['moderate']['end'])
+                $result_label.= "<span class=\"label label-success\">$label</span>";
+            else if ($value < Yii::app()->params['hgm_hb']['moderate']['start'])
+                $result_label.= "<span class=\"label label-important\">$label</span>";
+
+
+        $value = $lab_rep['hgm_rbc'];
+        $label = Yii::app()->params['childProfile']['hgm_rbc'];
+        if (!empty($value) && $value != 0)
+            if ($value >= Yii::app()->params['hgm_rbc']['moderate']['start'] && $value <= Yii::app()->params['hgm_rbc']['moderate']['end'])
+                $result_label.= "<span class=\"label label-warning\">$label</span>";
+            else if ($value > Yii::app()->params['hgm_rbc']['moderate']['end'])
+                $result_label.= "<span class=\"label label-success\">$label</span>";
+            else if ($value < Yii::app()->params['hgm_rbc']['moderate']['start'])
+                $result_label.= "<span class=\"label label-important\">$label</span>";
+
+
+        $value = $lab_rep['hgm_dc_wbc'];
+        $label = Yii::app()->params['childProfile']['hgm_dc_wbc'];
+        if (!empty($value) && $value != 0)
+            if ($value >= Yii::app()->params['hgm_dc_wbc']['moderate']['start'] && $value <= Yii::app()->params['hgm_dc_wbc']['moderate']['end'])
+                $result_label.= "<span class=\"label label-warning\">$label</span>";
+            else if ($value > Yii::app()->params['hgm_dc_wbc']['moderate']['end'])
+                $result_label.= "<span class=\"label label-success\">$label</span>";
+            else if ($value < Yii::app()->params['hgm_dc_wbc']['moderate']['start'])
+                $result_label.= "<span class=\"label label-important\">$label</span>";
+
+
+        $value = $lab_rep['hgm_platelet_count'];
+        $label = Yii::app()->params['childProfile']['hgm_platelet_count'];
+        if (!empty($value) && $value != 0)
+            if ($value >= Yii::app()->params['hgm_platelet_count']['moderate']['start'] && $value <= Yii::app()->params['hgm_platelet_count']['moderate']['end'])
+                $result_label.= "<span class=\"label label-warning\">$label</span>";
+            else if ($value > Yii::app()->params['hgm_platelet_count']['moderate']['end'])
+                $result_label.= "<span class=\"label label-success\">$label</span>";
+            else if ($value < Yii::app()->params['hgm_platelet_count']['moderate']['start'])
+                $result_label.= "<span class=\"label label-important\">$label</span>";
+
+
+        return $result_label;
+    }
 
     public function getAge() {
         if (!is_array($this->dob))
@@ -291,7 +356,7 @@ class MdnaChildMdl extends CActiveRecord {
             $criteria->params = array(':created_by' => Yii::app()->user->name);
         }
         $criteria->with = array(
-            'mdnaChildAnthropometryTbls'    => array(// this is for filtering
+            'mdnaChildAnthropometryTbls' => array(// this is for filtering
                 'select' => false,
                 'together' => true,
             ),
@@ -300,6 +365,69 @@ class MdnaChildMdl extends CActiveRecord {
                 'together' => true,
             ),
         );
+
+
+        //apply all rules
+        if (!empty($this->hgm_hb_status)) {
+            if ($this->hgm_hb_status == 'S') {
+                $start = Yii::app()->params['hgm_hb']['moderate']['start'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_hb < $start");
+                $criteria->addCondition("mdnaChildLabTbls.hgm_hb <> 0");
+            } elseif ($this->hgm_hb_status == 'M') {
+                $start = Yii::app()->params['hgm_hb']['moderate']['start'];
+                $end = Yii::app()->params['hgm_hb']['moderate']['end'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_hb >= $start");
+                $criteria->addCondition("mdnaChildLabTbls.hgm_hb <= $end");
+            } elseif ($this->hgm_hb_status == 'G') {
+                $end = Yii::app()->params['hgm_hb']['moderate']['end'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_hb > $end");
+            }
+        }
+        if (!empty($this->hgm_rbc_status)) {
+            if ($this->hgm_rbc_status == 'S') {
+                $start = Yii::app()->params['hgm_rbc']['moderate']['start'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_rbc < $start");
+                $criteria->addCondition("mdnaChildLabTbls.hgm_rbc <> 0");
+            } elseif ($this->hgm_rbc_status == 'M') {
+                $start = Yii::app()->params['hgm_rbc']['moderate']['start'];
+                $end = Yii::app()->params['hgm_rbc']['moderate']['end'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_rbc >= $start");
+                $criteria->addCondition("mdnaChildLabTbls.hgm_rbc <= $end");
+            } elseif ($this->hgm_rbc_status == 'G') {
+                $end = Yii::app()->params['hgm_rbc']['moderate']['end'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_rbc > $end");
+            }
+        }
+        if (!empty($this->hgm_dc_wbc_status)) {
+            if ($this->hgm_dc_wbc_status == 'S') {
+                $start = Yii::app()->params['hgm_dc_wbc']['moderate']['start'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_dc_wbc < $start");
+                $criteria->addCondition("mdnaChildLabTbls.hgm_dc_wbc <> 0");
+            } elseif ($this->hgm_dc_wbc_status == 'M') {
+                $start = Yii::app()->params['hgm_dc_wbc']['moderate']['start'];
+                $end = Yii::app()->params['hgm_dc_wbc']['moderate']['end'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_dc_wbc >= $start");
+                $criteria->addCondition("mdnaChildLabTbls.hgm_dc_wbc <= $end");
+            } elseif ($this->hgm_dc_wbc_status == 'G') {
+                $end = Yii::app()->params['hgm_dc_wbc']['moderate']['end'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_dc_wbc > $end");
+            }
+        }
+        if (!empty($this->hgm_platelet_count_status)) {
+            if ($this->hgm_platelet_count_status == 'S') {
+                $start = Yii::app()->params['hgm_platelet_count']['moderate']['start'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_platelet_count < $start");
+                $criteria->addCondition("mdnaChildLabTbls.hgm_platelet_count <> 0");
+            } elseif ($this->hgm_platelet_count_status == 'M') {
+                $start = Yii::app()->params['hgm_platelet_count']['moderate']['start'];
+                $end = Yii::app()->params['hgm_platelet_count']['moderate']['end'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_platelet_count >= $start");
+                $criteria->addCondition("mdnaChildLabTbls.hgm_platelet_count <= $end");
+            } elseif ($this->hgm_platelet_count_status == 'G') {
+                $end = Yii::app()->params['hgm_platelet_count']['moderate']['end'];
+                $criteria->addCondition("mdnaChildLabTbls.hgm_platelet_count > $end");
+            }
+        }
 
         //some testing going here       
         $criteria->mergeWith($this->valRangeSearchCriteria('mdnaChildLabTbls.hgm_hb', $this->hgm_hb));
@@ -368,7 +496,11 @@ class MdnaChildMdl extends CActiveRecord {
                 !empty($this->ps_platelets) ||
                 !empty($this->ps_impression) ||
                 !empty($this->lab_urine_profile) ||
-                !empty($this->lab_bor)
+                !empty($this->lab_bor) ||
+                !empty($this->hgm_hb_status) ||
+                !empty($this->hgm_rbc_status) ||
+                !empty($this->hgm_dc_wbc_status) ||
+                !empty($this->hgm_platelet_count_status)
         )
             $criteria->compare('mdnaChildLabTbls.is_active', 'Y', true);
 

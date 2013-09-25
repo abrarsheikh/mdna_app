@@ -39,22 +39,24 @@ return array(
         'R' => "Value Range",
         'N' => "Non"
     ),
+    'blood_range_search_dd'   => array(
+        'S' =>  'Severe',
+        'M' =>  'Moderate',
+        'G' =>  'Good'
+    ),
     // error messages
     'anthropometry_01' => "Anthropometry enteries can be made only after the child file is created",
     'lab_01' => "Lab Report enteries can be made only after the child file is created",
-    
-    
     //messages, title
-    'search_config_title'   =>  "Search Configuration Window",
-    'admin_page_title'      =>  "Manage Child Profile",
-    'view_child_profile_title'  =>  "View Child Profile",
+    'search_config_title' => "Search Configuration Window",
+    'admin_page_title' => "Manage Child Profile",
+    'view_child_profile_title' => "View Child Profile",
     'update_child_profile_title' => "Update Child Profile",
-    'view_ant'          =>  "Anthropometry Detail",
-    'update_ant'                =>  "Update Anthropometry",
-    'view_lab'          =>  "Lab Report",
-    'update_lab'        => "Update Lab Report",
-    'create_child_pro'          => "Create Child Profile",
-    
+    'view_ant' => "Anthropometry Detail",
+    'update_ant' => "Update Anthropometry",
+    'view_lab' => "Lab Report",
+    'update_lab' => "Update Lab Report",
+    'create_child_pro' => "Create Child Profile",
     //field labels
     'childProfile' => array(
         'id' => 'ID',
@@ -244,6 +246,36 @@ return array(
         'ps_impression' => 'Impression',
         'lab_urine_profile' => 'Urine Profile',
         'lab_bor' => 'Lab Bor',
+        'hgm_hb_status' =>  'Hemaglobin Range',    
+        'hgm_rbc_status' =>  'RBC Range',
+        'hgm_dc_wbc_status' =>  'WBC Range',
+        'hgm_platelet_count_status' => 'Platelet Count Range',
+        'blood_test_status' =>  'Blood Test Status'
+    ),
+    //business rules
+    'hgm_hb' => array(
+        'moderate' => array(
+            'start' => 7, //inclusive
+            'end' => 10, //exclusive
+        ),
+    ),
+    'hgm_rbc' => array(
+        'moderate' => array(
+            'start' => 3.5, //inclusive
+            'end' => 4.5, //exclusive
+        ),
+    ),
+    'hgm_dc_wbc' => array(
+        'moderate' => array(
+            'start' => 4000, //inclusive
+            'end' => 8000, //exclusive
+        ),
+    ),
+    'hgm_platelet_count' => array(
+        'moderate' => array(
+            'start' => 1, //inclusive
+            'end' => 20, //exclusive
+        ),
     )
 );
 ?>

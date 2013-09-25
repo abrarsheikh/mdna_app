@@ -6,6 +6,11 @@ $this->widget('zii.widgets.CDetailView', array(
         'taluk_code',
         'sr_no_wnc',
         'name',
+        array(
+            'name' => 'blood_test_status',
+            'value' => $model->getblood_test_status(),
+            'type' => 'raw',
+        ),
         'phc_name',
         'dob',
         array(

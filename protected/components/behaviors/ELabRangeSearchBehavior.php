@@ -13,7 +13,7 @@ class ELabRangeSearchBehavior extends CActiveRecordBehavior {
     /**
      * @param the default 'to' date when nothing is entered.
      */
-    public $hbToDefault = 100.00;
+    public $hbToDefault = 1000000000.00;
 
     /*
      * Date range search criteria
