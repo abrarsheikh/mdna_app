@@ -333,7 +333,10 @@ class MdnaChildMdl extends CActiveRecord {
 
     public function getAge() {
         if (!is_array($this->dob))
-            return round((strtotime('now') - strtotime($this->dob)) / (31556925.9747), 1, PHP_ROUND_HALF_DOWN);
+            if (!empty($this->dob) && $this->dob != '0000-00-00')
+                return round((strtotime('now') - strtotime($this->dob)) / (31556925.9747), 1, PHP_ROUND_HALF_DOWN);
+            else
+                return 0;
     }
 
     public function setAge($age) {
